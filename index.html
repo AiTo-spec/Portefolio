@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101411">
+  <meta name="description" content="Portfolio d'Antonin Gisbert, 22 ans, étudiant en BTS. Un espace en construction pour présenter son parcours et ses futurs projets.">
+  <title>Antonin Gisbert — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#101411;--bg-soft:#151b17;--paper:#f1f1e9;--muted:#a5ada3;--line:rgba(241,241,233,.15);--acid:#d2fa72;--mint:#9ce0c2;--orange:#ff815d;--mono:'DM Mono',monospace;--body:'Manrope',sans-serif;--display:'Space Grotesk',sans-serif;--wrap:min(1160px,calc(100% - 56px));color-scheme:dark}
+    *,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;background:var(--bg);color:var(--paper);font-family:var(--body);line-height:1.6;overflow-x:hidden}body::before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;background:radial-gradient(ellipse at 76% 3%,rgba(210,250,114,.1),transparent 31%),radial-gradient(ellipse at 4% 69%,rgba(156,224,194,.055),transparent 28%)}body::after{content:"";position:fixed;inset:0;z-index:6;pointer-events:none;opacity:.12;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.92' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.19'/%3E%3C/svg%3E")}
+    a{color:inherit;text-decoration:none}button{font:inherit}::selection{background:var(--acid);color:var(--bg)}.wrap{width:var(--wrap);margin-inline:auto}.mono{font-family:var(--mono)}.eyebrow{display:flex;gap:11px;align-items:center;color:var(--acid);font:500 .7rem/1.3 var(--mono);letter-spacing:.13em;text-transform:uppercase}.eyebrow::before{content:"";width:23px;height:1px;background:currentColor}.section{padding:120px 0;border-top:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:52px}.section-head h2{font:500 clamp(2.7rem,6.5vw,5.3rem)/.98 var(--display);letter-spacing:-.075em;margin:15px 0 0}.section-index{color:var(--muted);font: .68rem var(--mono);letter-spacing:.1em}.accent{color:var(--acid)}
+    .nav{position:fixed;inset:0 0 auto;z-index:20;border-bottom:1px solid transparent;transition:background .25s,border-color .25s}.nav.scrolled{background:rgba(16,20,17,.88);backdrop-filter:blur(16px);border-color:var(--line)}.nav-inner{width:var(--wrap);height:76px;margin:auto;display:flex;align-items:center;justify-content:space-between}.brand{font:700 1rem var(--display);letter-spacing:-.06em}.brand-mark{color:var(--acid)}.nav-links{list-style:none;display:flex;align-items:center;gap:31px;padding:0;margin:0}.nav-links a{color:#d0d4cb;font-size:.76rem;transition:color .2s}.nav-links a:hover,.nav-links a:focus-visible{color:var(--acid)}.nav-links .nav-cta{border:1px solid rgba(210,250,114,.48);padding:10px 15px;color:var(--acid)}.menu-toggle{display:none;background:transparent;border:1px solid var(--line);color:var(--paper);width:43px;height:43px;place-items:center;cursor:pointer}
+    .hero{min-height:100svh;position:relative;display:flex;align-items:center;padding:136px 0 95px;overflow:hidden}.hero::before{content:"";position:absolute;right:-14%;top:5%;width:min(68vw,850px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(210,250,114,.17),rgba(156,224,194,.07) 28%,rgba(255,129,93,.035) 44%,transparent 68%);filter:blur(6px);animation:aurora 12s ease-in-out infinite alternate;pointer-events:none}.hero::after{content:"";position:absolute;right:5%;top:19%;width:min(39vw,510px);aspect-ratio:1;border-radius:50%;border:1px solid rgba(210,250,114,.16);box-shadow:0 0 0 42px rgba(210,250,114,.025),0 0 0 84px rgba(210,250,114,.016);pointer-events:none}.hero-content{position:relative;z-index:1;width:100%}.hero-kicker{margin:0 0 29px}.hero-kicker .dot{width:7px;height:7px;background:var(--acid);border-radius:50%;box-shadow:0 0 16px rgba(210,250,114,.85);margin-left:1px}.hero h1{font:600 clamp(5.4rem,13.5vw,11.4rem)/.78 var(--display);letter-spacing:-.105em;margin:0;max-width:1060px}.hero h1 span{display:block}.hero h1 .last{padding-left:clamp(20px,10vw,132px);color:var(--acid)}.hero-bottom-row{margin:43px 0 0 clamp(1px,10vw,132px);display:flex;align-items:end;justify-content:space-between;gap:35px;max-width:870px}.hero-role{font-size:clamp(1.05rem,2vw,1.38rem);letter-spacing:-.03em;margin:0;color:#d5dad1;min-height:1.8em}.typed{color:var(--mint)}.cursor{display:inline-block;width:2px;height:1.05em;background:var(--acid);vertical-align:-.12em;margin-left:4px;animation:blink 1s steps(2,start) infinite}.hero-note{max-width:220px;margin:0 0 2px;padding-left:17px;border-left:1px solid var(--orange);color:var(--muted);font-size:.78rem;line-height:1.6}.hero-note b{display:block;color:var(--paper);font-size:.86rem;margin-bottom:4px}.hero-meta{position:absolute;z-index:1;bottom:30px;left:0;right:0;display:flex;justify-content:space-between;gap:15px;color:var(--muted);font: .64rem var(--mono);letter-spacing:.09em;text-transform:uppercase}.scroll-cue{display:flex;align-items:center;gap:11px}.scroll-cue i{width:38px;height:1px;background:var(--acid)}.hero-index{position:absolute;right:5.5%;top:50%;writing-mode:vertical-rl;color:rgba(241,241,233,.36);font: .6rem var(--mono);letter-spacing:.16em}
+    .about-grid{display:grid;grid-template-columns:.77fr 1.23fr;gap:12%;align-items:center}.age-orbit{width:min(100%,320px);aspect-ratio:1;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;margin:auto;position:relative}.age-orbit::before,.age-orbit::after{content:"";position:absolute;inset:12%;border:1px solid rgba(210,250,114,.24);border-radius:50%}.age-orbit::after{inset:29%;border-color:rgba(156,224,194,.28)}.orbit-star{position:absolute;right:15%;top:17%;font-size:1.3rem;color:var(--orange);z-index:1}.age-core{z-index:1;text-align:center}.age-number{font:600 clamp(5rem,9vw,7.1rem)/.82 var(--display);letter-spacing:-.1em;color:var(--acid)}.age-label{font: .62rem var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:14px}.about-copy .lead{font:500 clamp(1.55rem,3vw,2.5rem)/1.2 var(--display);letter-spacing:-.05em;margin:0 0 22px}.about-copy p:not(.lead){color:#b8c0b6;font-size:.94rem;max-width:580px;margin:0 0 15px}.inline-link{display:inline-flex;align-items:center;gap:10px;color:var(--acid);font-size:.82rem;margin-top:13px}.inline-link span{transition:transform .2s}.inline-link:hover span{transform:translate(3px,-3px)}
+    .skills-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.skill-panel{padding:28px;border:1px solid var(--line);background:linear-gradient(145deg,rgba(255,255,255,.035),transparent 85%);min-height:215px}.skill-panel h3{font:500 1.25rem var(--display);letter-spacing:-.04em;margin:0 0 9px}.skill-panel p{font-size:.82rem;color:var(--muted);margin:0 0 23px}.tag-list{display:flex;flex-wrap:wrap;gap:9px}.tag{display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(241,241,233,.17);padding:8px 11px;border-radius:99px;font: .68rem var(--mono);color:#d5dbd1}.tag::before{content:"＋";color:var(--acid)}.skills-foot{margin:18px 0 0;color:var(--muted);font: .67rem var(--mono)}
+    .projects{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.project{position:relative;min-height:280px;overflow:hidden;border:1px solid var(--line);padding:27px;background:linear-gradient(145deg,rgba(255,255,255,.035),rgba(255,255,255,.008));transition:transform .3s,border-color .3s,background .3s}.project:hover{transform:translateY(-5px);border-color:rgba(210,250,114,.45);background:linear-gradient(145deg,rgba(210,250,114,.075),rgba(255,255,255,.01))}.project.featured{grid-column:1/-1;min-height:285px;padding:32px;border-color:rgba(210,250,114,.34);background:linear-gradient(110deg,rgba(210,250,114,.09),rgba(255,255,255,.012) 73%)}.project-top{display:flex;justify-content:space-between;gap:12px;color:var(--muted);font: .63rem var(--mono);letter-spacing:.08em;text-transform:uppercase}.project-top .num{color:var(--acid)}.project h3{font:500 1.55rem/1.1 var(--display);letter-spacing:-.055em;margin:0 0 12px}.project.featured h3{font-size:clamp(2rem,4.5vw,3.4rem);max-width:500px}.project p{max-width:465px;color:var(--muted);font-size:.83rem;margin:0}.project-visual{float:right;width:35%;height:178px;margin:4px 3% 8px 22px;display:grid;place-items:center;position:relative}.visual-ring{width:142px;aspect-ratio:1;border-radius:50%;border:1px solid rgba(210,250,114,.55);display:grid;place-items:center;position:relative;box-shadow:0 0 35px rgba(210,250,114,.08),inset 0 0 28px rgba(210,250,114,.05);animation:orbit 20s linear infinite}.visual-ring::before,.visual-ring::after{content:"";position:absolute;border:1px solid rgba(156,224,194,.45);border-radius:50%;inset:15px;transform:rotateX(62deg) rotate(-25deg)}.visual-ring::after{inset:-13px;border-color:rgba(255,129,93,.38);transform:rotateX(68deg) rotate(36deg)}.visual-glyph{font:500 1.6rem var(--display);color:var(--acid)}.project-action{display:inline-flex;align-items:center;gap:13px;border:1px solid rgba(210,250,114,.47);padding:11px 15px;color:var(--acid);font-size:.76rem;margin-top:23px;transition:background .2s,color .2s}.project-action:hover{background:var(--acid);color:var(--bg)}.project-action span{font-size:1rem}.project-foot{display:flex;gap:8px;margin-top:23px}.mini-tag{border:1px solid rgba(156,224,194,.24);padding:5px 8px;color:var(--mint);font: .59rem var(--mono);letter-spacing:.06em;text-transform:uppercase}
+    .timeline{border-top:1px solid var(--line)}.timeline-item{display:grid;grid-template-columns:155px 1fr 24px;gap:26px;padding:28px 0;border-bottom:1px solid var(--line);align-items:start}.timeline-date{color:var(--acid);font: .68rem var(--mono);padding-top:5px;letter-spacing:.07em}.timeline-main h3{font:500 1.4rem/1.2 var(--display);letter-spacing:-.04em;margin:0 0 8px}.timeline-main p{max-width:690px;margin:0;color:var(--muted);font-size:.83rem}.timeline-mark{color:var(--orange);font-size:1.3rem}
+    .contact{padding:130px 0 35px;background:linear-gradient(180deg,transparent,rgba(210,250,114,.035))}.contact-layout{display:grid;grid-template-columns:1fr .68fr;gap:70px;align-items:end}.contact h2{font:500 clamp(4rem,10vw,8.7rem)/.79 var(--display);letter-spacing:-.105em;margin:24px 0 28px}.contact h2 span{color:var(--acid)}.contact-intro{color:var(--muted);font-size:.91rem;max-width:420px}.contact-links{display:grid;gap:10px}.contact-link{display:flex;justify-content:space-between;align-items:center;padding:16px 17px;border:1px solid var(--line);transition:border-color .2s,transform .2s,color .2s}.contact-link:hover{border-color:var(--acid);transform:translateX(4px);color:var(--acid)}.contact-link>span:first-child{font-size:.83rem}.contact-link small{font: .62rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}.footer{display:flex;justify-content:space-between;gap:18px;border-top:1px solid var(--line);padding-top:20px;margin-top:100px;color:var(--muted);font: .62rem var(--mono);letter-spacing:.04em}.footer a{color:var(--paper)}.footer a:hover{color:var(--acid)}
+    .reveal{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s cubic-bezier(.16,1,.3,1)}.reveal.visible{opacity:1;transform:none}.delay-1{transition-delay:.12s}.delay-2{transition-delay:.22s}@keyframes blink{to{visibility:hidden}}@keyframes aurora{from{transform:translate3d(-3%,1%,0) scale(.94);opacity:.75}to{transform:translate3d(2%,-2%,0) scale(1.08);opacity:1}}@keyframes orbit{to{transform:rotate(360deg)}}
+    @media(max-width:760px){:root{--wrap:min(100% - 40px,620px)}.section{padding:88px 0}.section-head{margin-bottom:38px}.nav-inner{height:68px}.menu-toggle{display:grid;z-index:2}.nav-links{display:none;position:absolute;top:68px;left:0;right:0;padding:14px max(20px,calc((100% - 620px)/2));background:rgba(16,20,17,.98);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0}.nav-links.open{display:flex}.nav-links li a{display:block;padding:13px 0}.nav-links .nav-cta{margin:5px 0 8px}.hero{min-height:92svh;padding:122px 0 96px}.hero::before{width:115vw;right:-50%;top:10%}.hero::after{width:75vw;right:-29%;top:18%}.hero h1{font-size:clamp(4.4rem,18vw,8.4rem)}.hero h1 .last{padding-left:7vw}.hero-bottom-row{margin:31px 0 0 7vw;display:block}.hero-note{margin:24px 0 0;max-width:260px}.hero-meta{bottom:21px;font-size:.57rem}.hero-index{display:none}.about-grid{grid-template-columns:1fr;gap:38px}.age-orbit{width:210px}.age-number{font-size:5rem}.about-copy{max-width:570px}.skills-grid{grid-template-columns:1fr}.skill-panel{min-height:0}.project{min-height:260px;padding:22px}.project.featured{padding:24px;min-height:0}.project-visual{height:140px;width:37%;margin:0 0 5px 14px}.visual-ring{width:105px}.project.featured h3{font-size:2.25rem}.timeline-item{grid-template-columns:100px 1fr 18px;gap:14px}.timeline-main h3{font-size:1.17rem}.contact-layout{grid-template-columns:1fr;gap:35px}.contact h2{font-size:clamp(4.2rem,18vw,7rem)}.footer{margin-top:65px;flex-wrap:wrap}}
+    @media(max-width:520px){:root{--wrap:calc(100% - 36px)}.section-head{align-items:start;flex-direction:column;gap:13px}.section-index{padding-left:34px}.projects{grid-template-columns:1fr}.project.featured{grid-column:auto}.project-visual{float:none;width:100%;height:130px;margin:0 0 15px}.project.featured h3{font-size:2.4rem}.project{min-height:230px}.project.featured{min-height:0}.timeline-item{grid-template-columns:1fr 22px;gap:8px 12px}.timeline-date{grid-column:1/-1;padding-top:0}.timeline-main{grid-column:1}.timeline-mark{grid-column:2;grid-row:2}.hero h1{font-size:clamp(4.05rem,19vw,6.3rem)}.hero-bottom-row{margin-left:4vw}.hero-meta{letter-spacing:0}.scroll-cue{gap:6px}.scroll-cue i{width:22px}.footer{flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+  </style>
+</head>
+<body>
+  <nav class="nav" aria-label="Navigation principale">
+    <div class="nav-inner">
+      <a class="brand" href="#accueil" aria-label="Antonin Gisbert, accueil">AG<span class="brand-mark">.</span></a>
+      <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links"><span aria-hidden="true">☰</span></button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#apropos">À propos</a></li><li><a href="#competences">Compétences</a></li><li><a href="#projets">Projets</a></li><li><a href="#parcours">Parcours</a></li><li><a class="nav-cta" href="#contact">Me contacter ↗</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <section class="hero" id="accueil" aria-labelledby="hero-title">
+      <div class="wrap hero-content">
+        <p class="eyebrow hero-kicker">Portfolio personnel <span class="dot" aria-hidden="true"></span> 2026</p>
+        <h1 id="hero-title"><span>Antonin</span><span class="last">Gisbert<span aria-hidden="true">.</span></span></h1>
+        <div class="hero-bottom-row">
+          <p class="hero-role"><span class="sr-only">Étudiant en BTS</span><span class="typed" id="typed" aria-hidden="true">Étudiant en BTS</span><span class="cursor" aria-hidden="true"></span></p>
+          <p class="hero-note"><b>Un portfolio en mouvement.</b>Mes projets seront ajoutés au fil de leur réalisation.</p>
+        </div>
+      </div>
+      <span class="hero-index" aria-hidden="true">PORTFOLIO — 2026 / FR</span>
+      <div class="wrap hero-meta"><span>22 ans · Étudiant en BTS</span><span class="scroll-cue"><i aria-hidden="true"></i>Défiler pour explorer</span></div>
+    </section>
+
+    <section class="section" id="apropos" aria-labelledby="about-title">
+      <div class="wrap">
+        <div class="section-head reveal"><div><div class="eyebrow">01 / À propos</div><h2 id="about-title">Un peu de <span class="accent">moi.</span></h2></div><span class="section-index">PERSONNE // 001</span></div>
+        <div class="about-grid">
+          <div class="age-orbit reveal" role="img" aria-label="22 ans"><span class="orbit-star" aria-hidden="true">✳</span><div class="age-core"><div class="age-number">22</div><div class="age-label">ans · en mouvement</div></div></div>
+          <div class="about-copy reveal delay-1"><p class="lead">Je suis Antonin Gisbert, étudiant en BTS.</p><p>Je construis ici un espace pour présenter mon parcours, mes apprentissages et les projets que je réaliserai.</p><p>Cette page évoluera au fil de mon cheminement : les détails de ma formation et mes compétences seront précisés au fur et à mesure.</p><a class="inline-link" href="#contact">Faire connaissance <span aria-hidden="true">↗</span></a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="competences" aria-labelledby="skills-title">
+      <div class="wrap">
+        <div class="section-head reveal"><div><div class="eyebrow">02 / Boîte à outils</div><h2 id="skills-title">Compétences<span class="accent">.</span></h2></div><span class="section-index">À COMPLÉTER</span></div>
+        <!-- À PERSONNALISER : remplacer les catégories par des compétences et outils réellement maîtrisés. -->
+        <div class="skills-grid">
+          <article class="skill-panel reveal"><h3>Technique</h3><p>Les compétences techniques seront détaillées ici.</p><div class="tag-list"><span class="tag">Technologies à préciser</span><span class="tag">Outils à préciser</span></div></article>
+          <article class="skill-panel reveal delay-1"><h3>Méthodes & pratique</h3><p>Les méthodes de travail seront précisées au fil du parcours.</p><div class="tag-list"><span class="tag">Méthodes à préciser</span><span class="tag">Pratiques à préciser</span></div></article>
+        </div>
+        <p class="skills-foot reveal">Aucune compétence n’est présumée — cette section est prête à être personnalisée.</p>
+      </div>
+    </section>
+
+    <section class="section" id="projets" aria-labelledby="projects-title">
+      <div class="wrap">
+        <div class="section-head reveal"><div><div class="eyebrow">03 / Laboratoire</div><h2 id="projects-title">Projets & <span class="accent">idées.</span></h2></div><span class="section-index">LE DÉBUT DE QUELQUE CHOSE</span></div>
+        <!-- À PERSONNALISER : remplacer VOTRE-PSEUDO par le pseudo GitHub réel. -->
+        <div class="projects">
+          <article class="project featured reveal">
+            <div class="project-top"><span class="num">Projets · à venir</span><span>01 — bientôt</span></div>
+            <div class="project-visual" aria-hidden="true"><div class="visual-ring"><span class="visual-glyph">AG<span class="accent">.</span></span></div></div>
+            <h3>Mes premiers projets arrivent.</h3>
+            <p>Pas encore de projet à présenter : ce portfolio est un point de départ. Retrouvez bientôt ici mes premières réalisations.</p>
+            <a class="project-action" href="https://github.com/VOTRE-PSEUDO" target="_blank" rel="noopener noreferrer">Voir mon GitHub <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="project reveal delay-1"><div class="project-top"><span class="num">À venir</span><span>01 / Dépôt</span></div><h3>Premier dépôt GitHub</h3><p>Un premier dépôt sera présenté lorsqu’il aura été créé et publié.</p><div class="project-foot"><span class="mini-tag">À venir</span></div></article>
+          <article class="project reveal"><div class="project-top"><span class="num">À venir</span><span>02 / BTS</span></div><h3>Projet de BTS</h3><p>Un projet de formation à ajouter lorsqu’il aura été réalisé.</p><div class="project-foot"><span class="mini-tag">À venir</span></div></article>
+          <article class="project reveal delay-1"><div class="project-top"><span class="num">À venir</span><span>03 / Portfolio</span></div><h3>Ce portfolio</h3><p>Cette page pourra évoluer et documenter sa propre progression.</p><div class="project-foot"><span class="mini-tag">En évolution</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="parcours" aria-labelledby="path-title">
+      <div class="wrap">
+        <div class="section-head reveal"><div><div class="eyebrow">04 / Trajectoire</div><h2 id="path-title">Parcours<span class="accent">.</span></h2></div><span class="section-index">APPRENDRE EN FAISANT</span></div>
+        <!-- À PERSONNALISER : préciser la spécialité du BTS, l’établissement et les dates. -->
+        <div class="timeline"><article class="timeline-item reveal"><div class="timeline-date">FORMATION</div><div class="timeline-main"><h3>BTS</h3><p>Spécialité, établissement et dates à préciser.</p></div><span class="timeline-mark" aria-hidden="true">＋</span></article></div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <div class="contact-layout">
+          <div class="reveal"><div class="eyebrow">05 / À vous de jouer</div><h2 id="contact-title">On se<br><span>parle ?</span></h2><p class="contact-intro">Une idée, une opportunité ou simplement envie d’échanger ? Écrivez-moi — je serai ravi de faire connaissance.</p></div>
+          <div class="contact-links reveal delay-1">
+            <!-- À PERSONNALISER : remplacer les coordonnées et profils par les liens réels. -->
+            <a class="contact-link" href="mailto:antonin.gisbert78@gmail.com"><span>Email</span><small>Écrire ↗</small></a>
+            <a class="contact-link" href="https://www.linkedin.com/in/antonin-gisbert-649a743b4/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><small>Profil ↗</small></a>
+            <!-- À PERSONNALISER : remplacer VOTRE-PSEUDO par le pseudo GitHub réel. -->
+            <a class="contact-link" href="https://github.com/AiTo-spec" target="_blank" rel="noopener noreferrer"><span>GitHub</span><small>Profil ↗</small></a>
+          </div>
+        </div>
+        <footer class="footer"><span>© 2026 Antonin Gisbert · Portfolio personnel</span><a href="#accueil">Retour en haut ↑</a><span>En construction, avec soin.</span></footer>
+      </div>
+    </section>
+  </main>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    (() => {
+      const nav = document.querySelector('.nav');
+      const toggle = document.querySelector('.menu-toggle');
+      const links = document.querySelector('.nav-links');
+      const typed = document.getElementById('typed');
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const words = ['Étudiant en BTS', 'Curieux du numérique', 'En construction'];
+      if (typed && !reducedMotion) {
+        let wordIndex = 0, charIndex = words[0].length, deleting = true;
+        const type = () => {
+          const word = words[wordIndex];
+          if (deleting) {
+            charIndex--;
+            typed.textContent = word.slice(0, Math.max(0, charIndex));
+            if (charIndex <= 0) { deleting = false; wordIndex = (wordIndex + 1) % words.length; }
+          } else {
+            const next = words[wordIndex];
+            charIndex++;
+            typed.textContent = next.slice(0, charIndex);
+            if (charIndex >= next.length) { deleting = true; window.setTimeout(type, 1500); return; }
+          }
+          window.setTimeout(type, deleting ? 48 : 78);
+        };
+        window.setTimeout(type, 1900);
+      }
+      const updateNav = () => nav.classList.toggle('scrolled', window.scrollY > 18);
+      updateNav();
+      window.addEventListener('scroll', updateNav, {passive:true});
+      toggle.addEventListener('click', () => {
+        const open = toggle.getAttribute('aria-expanded') !== 'true';
+        toggle.setAttribute('aria-expanded', String(open));
+        toggle.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu');
+        toggle.querySelector('span').textContent = open ? '×' : '☰';
+        links.classList.toggle('open', open);
+      });
+      links.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+        links.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.setAttribute('aria-label', 'Ouvrir le menu');
+        toggle.querySelector('span').textContent = '☰';
+      }));
+      const reveals = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window && !reducedMotion) {
+        const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+          if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+        }), {threshold:.12});
+        reveals.forEach(item => observer.observe(item));
+      } else reveals.forEach(item => item.classList.add('visible'));
+    })();
+  </script>
+  <style>.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}</style>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"8607d2a720d14b038279025b2b5a82e5","spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>
